@@ -1,4 +1,4 @@
-package biblioteca;
+package biblioteca.model;
 
 public class Emprestimo {
 
@@ -8,7 +8,7 @@ public class Emprestimo {
     private Aluno aluno;
     private Livro livro;
     private String dataEmprestimo;
-    private String dataDevolucao;  // null enquanto não devolvido
+    private String dataDevolucao;
     private boolean devolvido;
 
     public Emprestimo(Aluno aluno, Livro livro, String dataEmprestimo) {
@@ -29,18 +29,16 @@ public class Emprestimo {
         this.livro.devolver();
     }
 
-    public int getId()               { return id; }
-    public Aluno getAluno()          { return aluno; }
-    public Livro getLivro()          { return livro; }
-    public String getDataEmprestimo(){ return dataEmprestimo; }
-    public String getDataDevolucao() { return dataDevolucao; }
-    public boolean isDevolvido()     { return devolvido; }
+    public int getId()                { return id; }
+    public Aluno getAluno()           { return aluno; }
+    public Livro getLivro()           { return livro; }
+    public String getDataEmprestimo() { return dataEmprestimo; }
+    public String getDataDevolucao()  { return dataDevolucao; }
+    public boolean isDevolvido()      { return devolvido; }
 
     @Override
     public String toString() {
-        String status = devolvido
-                ? "Devolvido em " + dataDevolucao
-                : "Em aberto";
+        String status = devolvido ? "Devolvido em " + dataDevolucao : "Em aberto";
         return String.format(
                 "Emprestimo{id=%d, aluno='%s', livro='%s', emprestado='%s', status='%s'}",
                 id, aluno.getNome(), livro.getTitulo(), dataEmprestimo, status);

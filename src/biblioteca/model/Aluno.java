@@ -1,4 +1,4 @@
-package biblioteca;
+package biblioteca.model;
 
 public class Aluno {
 
@@ -17,8 +17,8 @@ public class Aluno {
         this.matricula = (matricula != null) ? matricula.trim() : "";
     }
 
-    public int getId()         { return id; }
-    public String getNome()    { return nome; }
+    public int getId()           { return id; }
+    public String getNome()      { return nome; }
     public String getMatricula() { return matricula; }
 
     @Override

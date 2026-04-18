@@ -1,2 +1,0 @@
-# Projeto_Controle_Biblioteca_Escolar
-

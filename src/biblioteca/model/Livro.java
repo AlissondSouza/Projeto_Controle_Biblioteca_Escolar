@@ -1,4 +1,4 @@
-package biblioteca;
+package biblioteca.model;
 
 public class Livro {
 
@@ -27,22 +27,19 @@ public class Livro {
     public void emprestar() {
         if (quantidadeDisponivel <= 0) {
             throw new IllegalStateException(
-                    "RN03 - Não há exemplares disponíveis do livro '" + titulo + "'.");
+                    "RN03 - Sem exemplares disponíveis do livro '" + titulo + "'.");
         }
         quantidadeDisponivel--;
     }
 
     public void devolver() {
         if (quantidadeDisponivel >= quantidadeTotal) {
-            throw new IllegalStateException(
-                    "Todos os exemplares já estão disponíveis. Devolução inválida.");
+            throw new IllegalStateException("Todos os exemplares já estão disponíveis.");
         }
         quantidadeDisponivel++;
     }
 
-    public boolean isDisponivel() {
-        return quantidadeDisponivel > 0;
-    }
+    public boolean isDisponivel() { return quantidadeDisponivel > 0; }
 
     public int getId()                    { return id; }
     public String getTitulo()             { return titulo; }
