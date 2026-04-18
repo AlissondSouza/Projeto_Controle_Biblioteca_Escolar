@@ -79,6 +79,13 @@ Este projeto foi desenvolvido com foco em **organização, boas práticas e evol
 
 ---
 
+## 🛠️ Tecnologias
+- ☕ Java
+- 🧩 POO (Programação Orientada a Objetos)
+- 🏗️ Arquitetura MVC
+
+---
+
 ## 🧠 Arquitetura
 🔹 Projeto 1
 - Simples
