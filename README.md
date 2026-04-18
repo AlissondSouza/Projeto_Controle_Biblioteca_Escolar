@@ -121,3 +121,10 @@ biblioteca-escolar/
 ````
 <p align="center"> <strong>Alisson Junior</strong><br> 💻 Desenvolvedor em evolução </p>
 
+---
+
+## 📄 Licença
+Este projeto é para fins acadêmicos e de aprendizado.
+
+---
+
